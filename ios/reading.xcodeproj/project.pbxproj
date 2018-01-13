@@ -29,6 +29,9 @@
 		17B5769B1C84466D002717C9 /* libRCTWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 176D7AC51C61D2DB004C465D /* libRCTWeChat.a */; };
 		17EC86EF1D6EE93F006878BB /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17EC86EE1D6EE93F006878BB /* Ionicons.ttf */; };
 		17EC86F61D6EE9AB006878BB /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EC86F51D6EE979006878BB /* libRNVectorIcons.a */; };
+		2A583DF32009E7F500D085F6 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 2A583DC82009E7F500D085F6 /* VERSION */; };
+		2A583DF42009E7F500D085F6 /* libGrowing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A583DC92009E7F500D085F6 /* libGrowing.a */; };
+		2A583DF62009E81400D085F6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A583DF52009E81400D085F6 /* libicucore.tbd */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		911E52ACA02445F0BD06A17D /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6162246D9CD4351A73DA780 /* libSplashScreen.a */; };
 		A85175D71D54FD2000AEF15A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85175D61D54FD2000AEF15A /* Security.framework */; };
@@ -351,6 +354,10 @@
 		179B10A31D210D1F00405A2C /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		17EC86EE1D6EE93F006878BB /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
 		17EC86F01D6EE979006878BB /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
+		2A583DC72009E7F500D085F6 /* Growing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Growing.h; sourceTree = "<group>"; };
+		2A583DC82009E7F500D085F6 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		2A583DC92009E7F500D085F6 /* libGrowing.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGrowing.a; sourceTree = "<group>"; };
+		2A583DF52009E81400D085F6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		6975C3AB08DA47EF8DD10122 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -366,6 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A583DF62009E81400D085F6 /* libicucore.tbd in Frameworks */,
 				17A9C7461F8F7AF600E2F87D /* libCodePush.a in Frameworks */,
 				17A9C7441F8F7AAC00E2F87D /* libRNDeviceInfo.a in Frameworks */,
 				179261C51E1BAC370033E8C9 /* libRCTAnimation.a in Frameworks */,
@@ -373,6 +381,7 @@
 				A85175D71D54FD2000AEF15A /* Security.framework in Frameworks */,
 				176D7AD01C61D31C004C465D /* libz.tbd in Frameworks */,
 				17B5769B1C84466D002717C9 /* libRCTWeChat.a in Frameworks */,
+				2A583DF42009E7F500D085F6 /* libGrowing.a in Frameworks */,
 				176D7ACE1C61D315004C465D /* libc++.tbd in Frameworks */,
 				176D7ACC1C61D30B004C465D /* libsqlite3.0.tbd in Frameworks */,
 				176D7ACA1C61D302004C465D /* CoreTelephony.framework in Frameworks */,
@@ -521,6 +530,7 @@
 		17A9C7451F8F7AF600E2F87D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A583DF52009E81400D085F6 /* libicucore.tbd */,
 				A864F2C81FC17881004C4765 /* Bugly.framework */,
 			);
 			name = Frameworks;
@@ -550,6 +560,16 @@
 				17EC86F51D6EE979006878BB /* libRNVectorIcons.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2A583DC62009E7F500D085F6 /* GrowingIO-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2A583DC72009E7F500D085F6 /* Growing.h */,
+				2A583DC82009E7F500D085F6 /* VERSION */,
+				2A583DC92009E7F500D085F6 /* libGrowing.a */,
+			);
+			path = "GrowingIO-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -596,6 +616,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				2A583DC62009E7F500D085F6 /* GrowingIO-iOS-SDK */,
 				17EC86ED1D6EE93F006878BB /* Fonts */,
 				A85175D61D54FD2000AEF15A /* Security.framework */,
 				176D7ACF1C61D31C004C465D /* libz.tbd */,
@@ -666,11 +687,6 @@
 			attributes = {
 				LastUpgradeCheck = 820;
 				ORGANIZATIONNAME = RichardCao;
-				TargetAttributes = {
-					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = K268C9Y5CJ;
-					};
-				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reading" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -1051,6 +1067,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A583DF32009E7F500D085F6 /* VERSION in Resources */,
 				17EC86EF1D6EE93F006878BB /* Ionicons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -1096,6 +1113,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = SXBU677CPT;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-splash-screen/ios";
 				INFOPLIST_FILE = reading/Info.plist;
@@ -1104,9 +1122,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/iReading\"",
+					"$(PROJECT_DIR)/GrowingIO-iOS-SDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.richardcao.reading;
+				PRODUCT_BUNDLE_IDENTIFIER = com.growingio.reading;
 				PRODUCT_NAME = iReading;
 				PROVISIONING_PROFILE = "";
 			};
@@ -1119,6 +1138,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXBU677CPT;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-splash-screen/ios";
 				INFOPLIST_FILE = reading/Info.plist;
@@ -1127,9 +1147,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/iReading\"",
+					"$(PROJECT_DIR)/GrowingIO-iOS-SDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.richardcao.reading;
+				PRODUCT_BUNDLE_IDENTIFIER = com.growingio.reading;
 				PRODUCT_NAME = iReading;
 				PROVISIONING_PROFILE = "";
 			};

@@ -14,6 +14,7 @@
 #import <React/RCTRootView.h>
 #import <Bugly/Bugly.h>
 #import "SplashScreen.h"
+#import "Growing.h"
 
 @implementation AppDelegate
 
@@ -28,6 +29,12 @@
   [Bugly startWithAppId:@"b0c9343009"];
 #endif
   
+  [Growing startWithAccountId:@"b685de56b4394b8f"];
+  [Growing setEnableLog:YES];
+  
+  id drag = NSClassFromString(@"GrowingLocalCircleWindow");
+  [drag performSelector:@selector(startCircle)];
+  
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"reading"
                                                initialProperties:nil
@@ -41,6 +48,15 @@
   [self.window makeKeyAndVisible];
   [SplashScreen show];
   return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+  if ([Growing handleUrl:url]) // 请务必确保该函数被调用
+  {
+    return YES;
+  }
+  return NO;
 }
 
 @end
