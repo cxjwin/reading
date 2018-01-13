@@ -32,8 +32,10 @@
   [Growing startWithAccountId:@"b685de56b4394b8f"];
   [Growing setEnableLog:YES];
   
+  /*
   id drag = NSClassFromString(@"GrowingLocalCircleWindow");
   [drag performSelector:@selector(startCircle)];
+  */
   
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"reading"
